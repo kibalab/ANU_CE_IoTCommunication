@@ -21,7 +21,7 @@ double ReadTher()
   double t = log(((10240000/raw) - 10000));
   t = 1 / (0.001129148 + (0.000234125 * t) + (0.0000000876741 * t * t * t));
   t = t - 273.15;
-  return raw;
+  return t;
 }
 
 void SendSerial()
